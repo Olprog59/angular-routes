@@ -1,0 +1,10 @@
+@for (article of articles; track article.id) {
+  <div class="article">
+    <a routerLink="/articles/{{ article.id }}">
+      <h4>{{ article.title }}</h4>
+    </a>
+    <p>{{ article.content }}</p>
+  </div>
+}
+
+<router-outlet />
